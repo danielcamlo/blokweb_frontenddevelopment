@@ -64,7 +64,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
 
-
+<img src="images/breakdownschets_HOMEPAGE.jpg" width="375px" alt="Breakdownschets van de homepagina">
+<img src="images/breakdownschets_EXPLOREPAGE.jpg" width="375px" alt="Breakdownschets van de homepagina">
 
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
@@ -77,8 +78,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/unsplash.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/unsplash.png" width="375px" alt="Homepage">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+<img src="images/unsplash_2" width="375px" alt="Explorepage">
