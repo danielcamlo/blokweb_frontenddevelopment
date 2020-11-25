@@ -1,5 +1,83 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
+body {
+    background-color: lightgray;
+}
+
+
+h1 {
+    justify-content: center;
+}
+
+
+nav a:hover {
+    background-color: darkslategrey;
+    color: black !important;
+}
+
+nav {
+    background-color: dimgrey;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav ul a {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0em 1.2em;
+    color: ghostwhite;
+}
+
+
+
+
+ul:nth-last-of-type(2) {
+    display: flex;
+}
+
+ul:nth-last-of-type(2) li {
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    margin-right: 0.125em;
+}
+
+
+
+.img1 {
+    width: 100%;
+    padding: 2.8em;
+    margin-top: 2em;
+    border-color: aqua;
+    border-radius: 1.5em;
+}
+
+.logo{
+    width: 10%;
+    margin-top: 1em;
+
+}
+
+.menu{
+    width: 10%;
+    margin-right: 15em;
+}
+
+
+footer{
+    text-align: center;
+}

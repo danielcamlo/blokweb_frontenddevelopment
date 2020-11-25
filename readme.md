@@ -39,20 +39,25 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Stand van zaken
 
 -dit ging goed & dit was lastig-
+De afbeelding en nav, lukten wel alleen zijn nog niet helemaal af. Het positioneren vond ik lastig en de hamburgermenu moet ik nog helemaal uitwerken.
 
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/ss_1.png" width="375px" alt="Homepage versie 1">
+Dit is de eerste versie van de homepage, je kan al naar de volgende pagina klikken maar hier staat nog niks op.
+
+
 
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
+Luca: /
+Jenny: - Hoe moet je een slider maken?/ Hoe moet ik de blauwe lijnen die je tussendoor ziet? / Position werkt nog niet, wat doe ik fout?/
+Iconen in nav -> hoe moet ik deze vormgeven en laten werken?
+Daniel: - Hoe maak je een slider met meerdere afbeelding / Hoe krijg ik mn hamburgermenu op de juiste plaats / zoekbalk lukte niet
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+
 
 ### Verslag van meeting
 
