@@ -29,15 +29,26 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 2 (week 5)
+### Stand van zaken
+-dit ging goed & dit was lastig-
+De eerste opdrachten zijn wel redelijk te doen, opdracht 2&3 zijn nog echt te moeilijk om te maken.
+**Screenshot(s):**
+Ik heb alleen een hartje toegevoegd, alleen dit werkte niet.
+<img src="images/ss_week5.png" width="375px" alt="homepagina">
 
--same as voortgang 1-
+### Agenda voor meeting
+-samen met je groepje opstellen-
+Luca: De zoekbalk is nog lastig, en luca wilt zich meer in flexbox verdiepen.
+Jenny: Hamburgermenu werk niet goed, de position werkt niet nog optimaal.
+Daniel: Hulp met hamburgermenu of nav, zodat dit goed staat, het gele hartje lukte bij mij niet.
+
+### Verslag van meeting
+na de meeting invullen........
 
 
 
 ## Voortgang 1 (week 3)
-
 ### Stand van zaken
-
 -dit ging goed & dit was lastig-
 De afbeelding en nav, lukten wel alleen zijn nog niet helemaal af. Het positioneren vond ik lastig en de hamburgermenu moet ik nog helemaal uitwerken.
 
@@ -48,9 +59,7 @@ De afbeelding en nav, lukten wel alleen zijn nog niet helemaal af. Het positione
 Dit is de eerste versie van de homepage, je kan al naar de volgende pagina klikken maar hier staat nog niks op.
 
 
-
 ### Agenda voor meeting
-
 -samen met je groepje opstellen-
 Luca: /
 Jenny: - Hoe moet je een slider maken?/ Hoe moet ik de blauwe lijnen die je tussendoor ziet? / Position werkt nog niet, wat doe ik fout?/
@@ -60,9 +69,13 @@ Daniel: - Hoe maak je een slider met meerdere afbeelding / Hoe krijg ik mn hambu
 
 
 ### Verslag van meeting
+FED-voortgang 26 september 2020
+De slider voor mijn website is een optie, het hoeft niet!
+Je kan dit doen dmv items en li, etc....
 
--na afloop snel uitkomsten vastleggen-
-
+Aangezien ik niet een CSS master ben, keep it simple :)
+Als er vragen zijn over bepaalde onderwerpen waar ik moeite mee heb, vraag de studentassistentes via Teams!!!
+Mijn uiteindelijke website van Unsplash hoeft niet super uitgebreid te zijn. 2 pagina + een responsive design.
 
 
 ## Breakdownschets (week 1)

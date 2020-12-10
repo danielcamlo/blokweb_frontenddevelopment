@@ -7,29 +7,37 @@
 
 body {
     background-color: lightgray;
+    margin: 0;
 }
-
 
 h1 {
-    justify-content: center;
+    display: flex;
+    padding: 0 0em 0 4em;
+    text-align: right;
 }
-
 
 nav a:hover {
     background-color: darkslategrey;
-    color: black !important;
+    color: black;
 }
 
 nav {
-    background-color: dimgrey;
+    width: 100%;
+    padding: 0 1em 0 1em;
+    margin: auto;
     text-align: center;
 }
 
 nav ul {
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     list-style-type: none;
     justify-content: center;
+}
+
+nav ul li {
+    display: flex;
+    margin: 0;
 }
 
 nav ul a {
@@ -38,46 +46,101 @@ nav ul a {
     font-size: 2em;
     font-weight: bold;
     text-decoration: none;
-    padding: 0em 1.2em;
+    padding: 0em 1em 0 1em;
     color: ghostwhite;
 }
 
 
-
-
-ul:nth-last-of-type(2) {
-    display: flex;
-}
-
-ul:nth-last-of-type(2) li {
-    justify-content: space-between;
-    flex-grow: 1;
-    align-items: center;
-    margin-right: 0.125em;
-}
-
-
-
 .img1 {
     width: 100%;
-    padding: 2.8em;
-    margin-top: 2em;
+    justify-content: center;
+    padding: 1.5em;
+    margin-top: 1.5em;
     border-color: aqua;
     border-radius: 1.5em;
 }
 
-.logo{
+.logo {
     width: 10%;
-    margin-top: 1em;
-
+    position: relative;
+    display: block;
+    margin-left: 1em;
+    margin-right: auto;
+    margin-top: 15px;
+    z-index: 100;
 }
 
-.menu{
+
+
+
+.section {
+    position: relative;
+    height: 15rem;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+    border-radius: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 1em;
+    height: 1em;
+    font-size: 3em;
+    line-height: 1em;
+    display: flex;
+}
+
+
+@keyframes hartslag-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    5% {
+        transform: scale(.7);
+    }
+
+    10% {
+        transform: scale(1.5);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+section.hartslag:hover div {
+    animation-name: hartslag-animation;
+    animation-duration: 2s;
+    animation-iteration-count: auto;
+    will-change: transform;
+}
+
+
+
+
+
+/*.menu{
     width: 10%;
     margin-right: 15em;
 }
+*/
 
-
-footer{
+footer {
+    padding: .5em .5em .5em .5em;
+    background-color: aqua;
     text-align: center;
+}
+
+
+@media (min-width 28em) {
+    font-size: auto;
 }
