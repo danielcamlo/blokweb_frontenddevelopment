@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08), 0 0 1px rgba(1, 0, 0, .1);
+}
+
+nav div {
+    height: 56px;
+}
+
+
+/* nav 1----------------------------------------------- */
+nav .nav1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    position: relative;
+    height: 56px;
+}
+
+nav input {
+    border-radius: 50px;
+    font-size: 1.5em;
+    width: 100%;
+    padding: .2em;
+}
+
+nav .hamburger {
+    position: relative;
+    height: 56px;
+    width: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0 20px 0 0;
+}
+
+nav .hamburger div {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 4px;
+    background-color: #767676;
+}
+
+
+/* nav 2----------------------------------------------- */
+nav .nav2 ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav .nav2 ul li {
+    padding: 1em;
+    list-style-type: none;
+
+}
+
+nav .nav2 ul li a {
+    text-decoration: none;
+    color: #767676;
+}
+
+nav .nav2 ul li a:hover {
+    color: black;
+}
+
+
+
+
+#welkom {
+    position: relative;
+    background-image: url(../images/welkombg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#welkom .overlay {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+}
+
+#welkom div:nth-child(2) {
+    position: relative;
+    padding: 10em 0 10em 0;
+}
+
+#welkom input{
+    width: 70%;
+    left: 50%;
+    margin: 2em 0 2em 0;
+    padding: .5em;
+    border-radius: 2em;
+    background-color: lightblue;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+#welkom h1,
+h2,
+p {
+    color: white;
+}
+
+
+#welkom .tekst{
+    margin: 2em;
+}
+
+
+#welkom h1 {
+    font-size: 2em;
+    text-align: center;
+
+}
+
+#welkom h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+#welkom .bottom {
+    position: absolute;
+    background-color: red;
+    opacity: .5;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+}
+
+
+
+
+
+#fotos{
+    display: flex;
+    flex-direction: column;
+}
+
+#fotos div{
+    position: relative;
+    width: 90%;
+    margin: 5% 5% 5% 5%;
+    overflow: hidden;
+}
+
+#fotos div img{
+    position: relative;
+    width: 100%;
+}
+#fotos div p{
+    position: absolute;
+    top:20px;
+    left:35px;
+    font-size: 3em;
+    font-weight: 200;
+    color: aquamarine;
+    background-color: darkgrey;
+    border-radius: 15px;
+    padding: .5em;
+    margin-top: 15px;
+}
+
+#fotos div p span{
+    color:red
+}
+#fotos div:nth-child(2) p span{
+    color:dodgerblue;
+}
+
+
+
+
+@media only screen and (min-width: 1000px) {
+    #welkom .bottom {
+        background-color: pink;
+    }
+
+    #fotos{
+    display: flex;
+    flex-direction: row;
+}
+}
