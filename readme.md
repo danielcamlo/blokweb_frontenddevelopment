@@ -6,9 +6,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. -https://unsplash.com/-
+2. -https://css-tricks.com/almanac/-
+3. -https://www.youtube.com/watch?v=m-cRRCvW9U4-
 
 
 
@@ -23,8 +23,34 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 3 (week 6)
+### Stand van zaken
+-dit ging goed & dit was lastig-
+Ik heb eerlijk gezegd vrij weinig tijd besteed aan de opdrachten voor de les, ik ben meer bezig geweest met youtube videos te kijken over css,
+hierdoor heb ik stappen kunnen maken en is mijn nav af, en heb ik al wat content toegevoegd aan mijn website, de tweede pagina moet ik wel nog maken.
 
--same as voortgang 1-
+**Screenshot(s):**
+De nav bovenaan is helemaal af, plus de content is toegevoegd
+<img src="images/ss_week6.png" width="375px" alt="homepagina">
+
+### Agenda voor meeting
+-samen met je groepje opstellen-
+Luca, Jenny en ik hebben alle 3 een vraag over een animatie die kan bewegen.
+En over het algemeen hebben wij dezelfde vragen.
+
+### Verslag van meeting
+FED-voortganggesprek 2
+Position afbeeldingen veranderen, de tweede pagina moet worden gemaakt anders ga ik teveel achter lopen.
+Meer content aan mijn website toevoegen.
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -43,7 +69,9 @@ Jenny: Hamburgermenu werk niet goed, de position werkt niet nog optimaal.
 Daniel: Hulp met hamburgermenu of nav, zodat dit goed staat, het gele hartje lukte bij mij niet.
 
 ### Verslag van meeting
-na de meeting invullen........
+FED-voortganggesprek 2
+Position afbeeldingen veranderen, de tweede pagina moet worden gemaakt anders ga ik teveel achter lopen.
+Meer content aan mijn website toevoegen.
 
 
 
