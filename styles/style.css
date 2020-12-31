@@ -1,211 +1,375 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
 }
 
 nav {
-    position: relative;
-    width: 100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .08), 0 0 1px rgba(1, 0, 0, .1);
+  position: relative;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08), 0 0 1px rgba(1, 0, 0, .1);
 }
 
 nav div {
-    height: 56px;
+  height: 56px;
 }
-
 
 /* nav 1----------------------------------------------- */
 nav .nav1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav .logo {
-    position: relative;
-    height: 56px;
+  position: relative;
+  height: 56px;
 }
 
 nav input {
-    border-radius: 50px;
-    font-size: 1.5em;
-    width: 100%;
-    padding: .2em;
+  border-radius: 25px;
+  font-size: 1.25em;
+  width: 90%;
+  padding: .19em .5em;
+
 }
 
+/* HamburgerMenu--------------------------------------- */
 nav .hamburger {
-    position: relative;
-    height: 56px;
-    width: 56px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0 20px 0 0;
+  position: relative;
+  height: 56px;
+  width: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: .5em 1em .5em 1em;
 }
 
-nav .hamburger div {
-    position: relative;
-    width: 20px;
-    height: 2px;
-    margin-bottom: 4px;
-    background-color: #767676;
+/*
+nav .hamburger ul {
+  margin: 0;
+  padding: 2em 2em 2em 2em;
+  position: fixed;
+  background-color: darkcyan;
+  list-style: none;
+} */
+nav .nav1 ul {
+  position: fixed;
+  list-style: none;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  transform: translateX(-100%);
+  transform: 5s;
 }
+
+nav #hetmenu {
+  font-size: 15px;
+  font-weight: bold;
+  color: #555555;
+  padding: 3.5px 3.5px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav .hamburgermenu {
+  transform: translateX(0);
+}
+
+#expandednav {
+  position: fixed;
+  background-color: #26272b;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  text-decoration: none;
+  transform: translateY(-100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#expandednav, ul, li, a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  letter-spacing: .1em;
+  margin-bottom: 2em;
+  padding: 8px 8px;
+  transition: .4s;
+}
+#expandednav, ul, li, a:hover {
+  color: dodgerblue;
+}
+
+.showexpandednav {
+  transform: translateY(0%) !important;
+}
+
+#closemenu{
+  width: 20px;
+  right: 0;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+#closemenu svg{
+  fill:white;
+  transition: .3s;
+}
+#closemenu svg:hover{
+  fill:red;
+  transform: scale(1.2) rotate(360deg);
+}
+#closemenu svg:active{
+  fill:green;
+  transform: scale(.6) rotate(-360deg);
+}
+
 
 
 /* nav 2----------------------------------------------- */
 nav .nav2 ul {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
 }
 
 nav .nav2 ul li {
-    padding: 1em;
-    list-style-type: none;
-
+  padding: 1em;
+  list-style-type: none;
 }
 
 nav .nav2 ul li a {
-    text-decoration: none;
-    color: #767676;
+  text-decoration: none;
+  color: #9a9a9a;
+  transition: .3s;
 }
 
 nav .nav2 ul li a:hover {
-    color: black;
+  color: black;
 }
 
-
-
-
+/* Homepage Unsplash met openingstekst en form---------------------------------------- */
 #welkom {
-    position: relative;
-    background-image: url(../images/welkombg.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  background-image: url(../images/welkombg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 #welkom .overlay {
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    opacity: .4;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
 }
 
 #welkom div:nth-child(2) {
-    position: relative;
-    padding: 10em 0 10em 0;
+  position: relative;
+  padding: 10em 0 10em 0;
 }
 
-#welkom input{
-    width: 70%;
-    left: 50%;
-    margin: 2em 0 2em 0;
-    padding: .5em;
-    border-radius: 2em;
-    background-color: lightblue;
-    transform: translateX(-50%);
-    position: relative;
+#welkom input {
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  margin: 2em 0 2em 0;
+  padding: .4em;
+  border-radius: 15px;
+  background-color: white;
+  transform: translateX(0%);
 }
 
 #welkom h1,
 h2,
 p {
-    color: white;
+  color: white;
 }
 
-
-#welkom .tekst{
-    margin: 2em;
+#welkom .tekst {
+  margin: 2em;
+  text-align: center;
 }
-
 
 #welkom h1 {
-    font-size: 2em;
-    text-align: center;
-
+  font-size: 2em;
+  text-align: center;
 }
 
 #welkom h2 {
-    font-size: 1.5em;
-    text-align: center;
+  font-size: 1.3em;
+  text-align: center;
 }
 
+#welkom a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
 
 #welkom .bottom {
-    position: absolute;
-    background-color: red;
-    opacity: .5;
-    width: 100%;
-    height: 10%;
-    bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 5%;
+  bottom: 0;
+  text-align: center;
+  opacity: 75%;
+}
+
+/* Explorepagina---------------------------------------- */
+#onderwerpen .tekste {
+  /* position: absolute; */
+  margin: 2em 2em 2em 2em;
+  text-align: center;
+}
+
+#onderwerpen .tekste {
+  margin: 2em;
+  text-align: center;
+  color: #737373;
+}
+
+#onderwerpen h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+  color: black;
+}
+
+#onderwerpen h2 {
+  font-size: 1em;
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+  color: #737373;
+}
+
+#onderwerpen h3 {
+  font-size: 1em;
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+  color: black;
+}
+
+
+#onderwerpen, .background img {
+  position: relative;
+  width: 90%;
+  padding-top: 2em;
+  margin: 2% 5% 2% 5%;
 }
 
 
 
 
-
-#fotos{
-    display: flex;
-    flex-direction: column;
+/* Foto's---------------------------------------- */
+#fotos {
+  display: flex;
+  flex-direction: column;
 }
 
-#fotos div{
-    position: relative;
-    width: 90%;
-    margin: 5% 5% 5% 5%;
-    overflow: hidden;
+#fotos div {
+  position: relative;
+  width: 90%;
+  margin: 5% 5% 5% 5%;
+  overflow: hidden;
 }
 
-#fotos div img{
-    position: relative;
-    width: 100%;
-}
-#fotos div p{
-    position: absolute;
-    top:20px;
-    left:35px;
-    font-size: 3em;
-    font-weight: 200;
-    color: aquamarine;
-    background-color: darkgrey;
-    border-radius: 15px;
-    padding: .5em;
-    margin-top: 15px;
+#fotos div img {
+  position: relative;
+  width: 100%;
 }
 
-#fotos div p span{
-    color:red
+#fotos div p {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 1.5em;
+  font-weight: 280;
+  color: white;
+  background-color: grey;
+  border-radius: 10px;
+  padding: .25em;
+  margin-top: 3.5px;
 }
-#fotos div:nth-child(2) p span{
-    color:dodgerblue;
+
+#fotos div p span {
+  color: #F76912;
 }
 
+#fotos div:nth-child(2) p span {
+  color: #2D50FF;
+}
 
+#fotos div:nth-child(3) p span {
+  color: #FFD606;
+}
 
+#fotos div:nth-child(4) p span {
+  color: #FFD606;
+}
 
+/* Footer---------------------------------------- */
+.site-footer {
+  background-color: #26272b;
+  padding: 1em 4em 1em 4em;
+  font-size: 12px;
+  line-height: 20px;
+  color: white;
+}
+
+.site-footer h6 {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px
+}
+
+.site-footer a {
+  color: #737373;
+}
+
+.footer-links {
+  margin-top: 2.5em;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-links a:active, .footer-links a:focus, .footer-links a:hover {
+  color: dodgerblue;
+}
+
+/* Media-Queries---------------------------------------- */
 @media only screen and (min-width: 1000px) {
-    #welkom .bottom {
-        background-color: pink;
-    }
+  #welkom .bottom {
+    background-color: pink;
+  }
 
-    #fotos{
+  #fotos {
     display: flex;
     flex-direction: row;
-}
+  }
 }

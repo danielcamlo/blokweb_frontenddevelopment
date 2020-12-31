@@ -44,16 +44,6 @@ Meer content aan mijn website toevoegen.
 
 
 
-
-
-
-
-
-
-
-
-
-
 ## Voortgang 2 (week 5)
 ### Stand van zaken
 -dit ging goed & dit was lastig-
