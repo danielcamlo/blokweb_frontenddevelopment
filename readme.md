@@ -9,18 +9,23 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 1. -https://unsplash.com/-
 2. -https://css-tricks.com/almanac/-
 3. -https://www.youtube.com/watch?v=m-cRRCvW9U4-
+4. -https://getflywheel.com/layout/css-breakpoints-responsive-design-how-to/
+5. -Boek HTML & CSS websites ontwerpen en bouwen, van Jon Duckett
 
 
 
 ## Eindgesprek (week 7/8)
 
 -dit ging goed & dit was lastig-
+Na veel moeite is het mij gelukt om de hamburgermenu af te krijgen, incl. een animatie als je erover heen hovert.
+De mediaqueries gingen wat mij betreft prima, ik heb er wel veel tijd ingestoken maar dan krijg je netjes de afbeeldingen naast elkaar.
+Ook heb ik mijn tweede "explorepagina" gevuld met content en dit netjes gemaakt.
 
 **Screenshot(s):**
-
 -screenshot(s) van je eindresultaat-
-
-
+<img src="images/homepage_eind.png" width="375px" alt="eindversie homepagina">
+<img src="images/explore1.png" width="375px" alt="eindversie explorepagina 1">
+<img src="images/explore2.png" width="375px" alt="eindversie explorepaigna 2">
 
 ## Voortgang 3 (week 6)
 ### Stand van zaken

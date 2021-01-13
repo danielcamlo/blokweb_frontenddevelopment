@@ -8,16 +8,18 @@ body {
 }
 
 nav {
-  position: relative;
+  position: fixed;
   width: 100%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .08), 0 0 1px rgba(1, 0, 0, .1);
+  z-index: 100;
+  background-color: white;
+  top: 0;
 }
 
 nav div {
   height: 56px;
 }
 
-/* nav 1----------------------------------------------- */
+/* nav 1- Logo/input---------------------------------- */
 nav .nav1 {
   display: flex;
   flex-direction: row;
@@ -35,7 +37,6 @@ nav input {
   font-size: 1.25em;
   width: 90%;
   padding: .19em .5em;
-
 }
 
 /* HamburgerMenu--------------------------------------- */
@@ -50,14 +51,6 @@ nav .hamburger {
   margin: .5em 1em .5em 1em;
 }
 
-/*
-nav .hamburger ul {
-  margin: 0;
-  padding: 2em 2em 2em 2em;
-  position: fixed;
-  background-color: darkcyan;
-  list-style: none;
-} */
 nav .nav1 ul {
   position: fixed;
   list-style: none;
@@ -91,7 +84,7 @@ nav .hamburgermenu {
   height: 100vh;
   left: 0;
   top: 0;
-  z-index: 100;
+  z-index: 101;
   text-decoration: none;
   transform: translateY(-100%);
   display: flex;
@@ -110,6 +103,7 @@ nav .hamburgermenu {
   padding: 8px 8px;
   transition: .4s;
 }
+
 #expandednav, ul, li, a:hover {
   color: dodgerblue;
 }
@@ -118,29 +112,30 @@ nav .hamburgermenu {
   transform: translateY(0%) !important;
 }
 
-#closemenu{
-  width: 20px;
+#closemenu {
+  width: 30px;
   right: 0;
   position: absolute;
-  right: 20px;
+  right: 70px;
   top: 0;
 }
-#closemenu svg{
-  fill:white;
+
+#closemenu svg {
+  fill: white;
   transition: .3s;
 }
-#closemenu svg:hover{
-  fill:red;
+
+#closemenu svg:hover {
+  fill: red;
   transform: scale(1.2) rotate(360deg);
 }
-#closemenu svg:active{
-  fill:green;
+
+#closemenu svg:active {
+  fill: green;
   transform: scale(.6) rotate(-360deg);
 }
 
-
-
-/* nav 2----------------------------------------------- */
+/* nav 2 - Home/Explore/Brands/Gallery--------------------- */
 nav .nav2 ul {
   height: 100%;
   display: flex;
@@ -165,8 +160,17 @@ nav .nav2 ul li a {
 nav .nav2 ul li a:hover {
   color: black;
 }
+nav .nav2 ul li a:active {
+  font-weight: 400;
+  font-size: 25px;
+  color: black;
+}
 
-/* Homepage Unsplash met openingstekst en form---------------------------------------- */
+main {
+  margin-top: 110px;
+}
+
+/* Homepage - openingstekst en form---------------------------------------- */
 #welkom {
   position: relative;
   background-image: url(../images/welkombg.jpeg);
@@ -239,52 +243,7 @@ p {
   opacity: 75%;
 }
 
-/* Explorepagina---------------------------------------- */
-#onderwerpen .tekste {
-  /* position: absolute; */
-  margin: 2em 2em 2em 2em;
-  text-align: center;
-}
-
-#onderwerpen .tekste {
-  margin: 2em;
-  text-align: center;
-  color: #737373;
-}
-
-#onderwerpen h1 {
-  font-size: 1.5em;
-  text-align: center;
-  margin: 5% 5% 5% 5%;
-  color: black;
-}
-
-#onderwerpen h2 {
-  font-size: 1em;
-  text-align: center;
-  margin: 5% 5% 5% 5%;
-  color: #737373;
-}
-
-#onderwerpen h3 {
-  font-size: 1em;
-  text-align: center;
-  margin: 5% 5% 5% 5%;
-  color: black;
-}
-
-
-#onderwerpen, .background img {
-  position: relative;
-  width: 90%;
-  padding-top: 2em;
-  margin: 2% 5% 2% 5%;
-}
-
-
-
-
-/* Foto's---------------------------------------- */
+/* Foto's en titels op Homepage---------------------------------------- */
 #fotos {
   display: flex;
   flex-direction: column;
@@ -316,11 +275,13 @@ p {
 }
 
 #fotos div p span {
-  color: #F76912;
+  color: red;
+  font-style: italic;
 }
 
 #fotos div:nth-child(2) p span {
   color: #2D50FF;
+  font-style: italic;
 }
 
 #fotos div:nth-child(3) p span {
@@ -331,7 +292,111 @@ p {
   color: #FFD606;
 }
 
-/* Footer---------------------------------------- */
+
+/* Explorepagina---------------------------------------- */
+#onderwerpen .tekste {
+  margin: 2em 2em 2em 2em;
+  text-align: center;
+}
+
+#onderwerpen .tekste {
+  margin: 2em;
+  text-align: center;
+  color: #737373;
+}
+
+#onderwerpen h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+  color: black;
+}
+
+#onderwerpen h2 {
+  font-size: 1em;
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+  color: #737373;
+}
+
+#onderwerpen h3 {
+  font-size: 1.5em;
+  padding-top: 3.5em;
+  padding-bottom: 0;
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+  color: black;
+}
+
+#onderwerpen, .background img {
+  position: relative;
+  width: 90%;
+  padding-top: 2em;
+  margin: 2% 5% 2% 5%;
+}
+
+/* Explorepagina - Woorden: Background, Images & Wallpapers------------------ */
+#fotos2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#fotos2 div {
+  position: relative;
+  width: 90%;
+  margin: 5% 5% 5% 5%;
+  overflow: hidden;
+}
+
+#fotos2 div img {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+}
+
+#fotos2 div .imagecontainer {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+#fotos2 div p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  text-align: center;
+  color: white;
+}
+
+/* H4 & H5 explorepagina,  onder de afbeeldingen-------------------------- */
+#fotos2 h4 {
+  padding-top: 1em;
+  font-size: 1em;
+  font-weight: 200;
+  text-align: center;
+}
+
+#fotos2 h5 {
+  padding: 1em;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 25px;
+  color: black;
+  background-color: lightgrey;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  margin-top: 1.5em;
+  border-radius: 1.1em;
+}
+
+
+/* Footer website------------------------------------ */
 .site-footer {
   background-color: #26272b;
   padding: 1em 4em 1em 4em;
@@ -358,18 +423,213 @@ p {
   list-style: none;
 }
 
+footer p{
+  font-size: 14px;
+}
+
 .footer-links a:active, .footer-links a:focus, .footer-links a:hover {
   color: dodgerblue;
 }
 
-/* Media-Queries---------------------------------------- */
-@media only screen and (min-width: 1000px) {
+
+
+
+
+/* Media-Queries- 800/1000/1400---------------------------------- */
+@media only screen and (min-width: 800px) {
+  nav input {
+    font-size: 1.4em;
+  }
+  nav .nav2 ul li a {
+    font-size: 18px;
+  }
+  nav #hetmenu {
+    font-size: 17px;
+  }
+  nav .logo {
+    height: 59px;
+  }
+  #welkom h1 {
+    font-size: 30px;
+  }
+  #welkom .tekst {
+    font-size: 18px;
+  }
   #welkom .bottom {
-    background-color: pink;
+    font-size: 20px;
+  }
+  #welkom p {
+    font-size: 20px;
+  }
+  #welkom input{
+    font-size: 18px;
+  }
+  #fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 26em);
+    margin: 10px 5px 10px 5px;
+    width: 90%;
+  }
+  #fotos div p {
+    font-size: 1.5em;
+    font-weight: 380;
+    color: white;
+    background-color: grey;
+  }
+  #onderwerpen .tekste {
+    font-size: 20px;
+  }
+
+  #fotos2{
+    display: grid;
+    grid-template-columns: repeat(2, 27em);
+    width: 100%;
+    margin-left: 20px;
+
+  }
+  #fotos2 div .imagecontainer {
+    width: 100%;
+    margin: 0;
+  }
+  .site-footer h6 {
+    font-size: 20px;
+  }
+
+  .footer-links {
+    display: flex;
+    font-size: 15px;
+  }
+  footer p{
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  nav input {
+    font-size: 1.6em;
+  }
+
+  nav .nav2 ul li a {
+    font-size: 20px;
+  }
+
+  nav #hetmenu {
+    font-size: 19px;
+    margin-right: 35px;
+  }
+
+  nav .logo {
+    height: 64px;
+  }
+
+  #welkom h1 {
+    font-size: 35px;
+  }
+
+  #welkom .tekst {
+    font-size: 20px;
+  }
+
+  #welkom .bottom {
+    font-size: 22px;
   }
 
   #fotos {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 34.5em);
+    margin: 10px 5px 10px 5px;
   }
+
+  #fotos div p {
+    font-size: 2em;
+    font-weight: 300;
+    color: white;
+    background-color: grey;
+  }
+  #onderwerpen .tekste {
+    font-size: 22px;
+  }
+  #fotos2{
+    display: grid;
+    grid-template-columns: repeat(2, 28em);
+    width: 100%;
+    margin-left: 160px;
+
+  }
+  #fotos2 div .imagecontainer {
+    width: 100%;
+    margin: 0;
+  }
+  .site-footer h6 {
+    font-size: 23px;
+  }
+  footer p{
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+  nav input {
+    font-size: 1.65em;
+  }
+
+  nav .nav2 ul li a {
+    font-size: 22px;
+  }
+
+  nav #hetmenu {
+    font-size: 25px;
+    margin-right: 80px;
+  }
+
+  nav .logo {
+    height: 75px;
+  }
+
+  #welkom h1 {
+    font-size: 40px;
+  }
+
+  #welkom .tekst {
+    font-size: 22px;
+  }
+
+  #welkom .bottom {
+    font-size: 24px;
+  }
+
+  #fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 53em);
+    margin: 5px 5px 5px 5px;
+    padding-left: 65px;
+  }
+  #onderwerpen .tekste {
+    font-size: 24px;
+  }
+  #fotos2{
+    display: grid;
+    grid-template-columns: repeat(2, 40em);
+    width: 100%;
+    margin-left: 100px;
+
+  }
+  #fotos2 div .imagecontainer {
+    width: 100%;
+    margin: 0;
+  }
+  .site-footer h6 {
+    font-size: 25px;
+  }
+
+  footer p {
+    fontsize: 16px;
+  }
+  .footer-links {
+    text-align: center;
+    font-size: 22px;
+  }
+}
 }
